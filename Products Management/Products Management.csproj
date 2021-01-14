@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DF0DFF4-F947-4703-90B6-CA3CBD15F3D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Products_Management</RootNamespace>
+    <AssemblyName>Products Management</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\aw\Desktop\Publish2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6E5EB194817841037306CCA7C2534B25F8D9CC26</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Products Management_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\CLS_Customers.cs" />
+    <Compile Include="BL\CLS_Login.cs" />
+    <Compile Include="BL\CLS_Orders.cs" />
+    <Compile Include="BL\CLS_Products.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\FRM_Add_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Add_Product.Designer.cs">
+      <DependentUpon>FRM_Add_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Add_User.Designer.cs">
+      <DependentUpon>FRM_Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Backup.Designer.cs">
+      <DependentUpon>FRM_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Categories.Designer.cs">
+      <DependentUpon>FRM_Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Config.Designer.cs">
+      <DependentUpon>FRM_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Customers.Designer.cs">
+      <DependentUpon>FRM_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Customers_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Customers_List.Designer.cs">
+      <DependentUpon>FRM_Customers_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Main.Designer.cs">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Orders.Designer.cs">
+      <DependentUpon>FRM_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Orders_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Orders_list.Designer.cs">
+      <DependentUpon>FRM_Orders_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Preview.Designer.cs">
+      <DependentUpon>FRM_Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Products.Designer.cs">
+      <DependentUpon>FRM_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Products_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Products_List.Designer.cs">
+      <DependentUpon>FRM_Products_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Users_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Users_List.Designer.cs">
+      <DependentUpon>FRM_Users_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPT\AllProduct_DS.cs">
+      <DependentUpon>AllProduct_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\AllProduct_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllProduct_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Curr_prod_DS.cs">
+      <DependentUpon>Curr_prod_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Curr_prod_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Curr_prod_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\DS_allCategories.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_allCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\DS_currCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_currCategory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\DS_orderDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_orderDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_Curr_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_Curr_Category.Designer.cs">
+      <DependentUpon>FRM_Curr_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt.Designer.cs">
+      <DependentUpon>FRM_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_allCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_allCategories.Designer.cs">
+      <DependentUpon>FRM_rpt_allCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_AllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_AllProducts.Designer.cs">
+      <DependentUpon>FRM_rpt_AllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_Crr_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_Crr_Product.Designer.cs">
+      <DependentUpon>FRM_rpt_Crr_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_orderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\FRM_rpt_orderDetails.Designer.cs">
+      <DependentUpon>FRM_rpt_orderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="PL\FRM_Add_Product.resx">
+      <DependentUpon>FRM_Add_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Add_User.resx">
+      <DependentUpon>FRM_Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Backup.resx">
+      <DependentUpon>FRM_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Categories.resx">
+      <DependentUpon>FRM_Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Config.resx">
+      <DependentUpon>FRM_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Customers.resx">
+      <DependentUpon>FRM_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Customers_List.resx">
+      <DependentUpon>FRM_Customers_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Main.resx">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Orders.resx">
+      <DependentUpon>FRM_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Orders_list.resx">
+      <DependentUpon>FRM_Orders_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Preview.resx">
+      <DependentUpon>FRM_Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Products.resx">
+      <DependentUpon>FRM_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Products_List.resx">
+      <DependentUpon>FRM_Products_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Users_List.resx">
+      <DependentUpon>FRM_Users_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RPT\FRM_Curr_Category.resx">
+      <DependentUpon>FRM_Curr_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt.resx">
+      <DependentUpon>FRM_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_allCategories.resx">
+      <DependentUpon>FRM_rpt_allCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_AllProducts.resx">
+      <DependentUpon>FRM_rpt_AllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_Crr_Product.resx">
+      <DependentUpon>FRM_rpt_Crr_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\FRM_rpt_orderDetails.resx">
+      <DependentUpon>FRM_rpt_orderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_allCategories.rdlc" />
+    <EmbeddedResource Include="RPT\rpt_AllProducts.rdlc" />
+    <EmbeddedResource Include="RPT\rpt_currCategory.rdlc" />
+    <EmbeddedResource Include="RPT\rpt_CurrentProduct.rdlc" />
+    <EmbeddedResource Include="RPT\rpt_orderDetails.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Products Management_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Products_Management.RPT.FRM_rpt.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RPT\AllProduct_DS.xsc">
+      <DependentUpon>AllProduct_DS.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\AllProduct_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllProduct_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RPT\AllProduct_DS.xss">
+      <DependentUpon>AllProduct_DS.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\Curr_prod_DS.xsc">
+      <DependentUpon>Curr_prod_DS.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\Curr_prod_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Curr_prod_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RPT\Curr_prod_DS.xss">
+      <DependentUpon>Curr_prod_DS.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_allCategories.xsc">
+      <DependentUpon>DS_allCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_allCategories.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_allCategories.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RPT\DS_allCategories.xss">
+      <DependentUpon>DS_allCategories.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_currCategory.xsc">
+      <DependentUpon>DS_currCategory.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_currCategory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_currCategory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RPT\DS_currCategory.xss">
+      <DependentUpon>DS_currCategory.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_orderDetails.xsc">
+      <DependentUpon>DS_orderDetails.xsd</DependentUpon>
+    </None>
+    <None Include="RPT\DS_orderDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_orderDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RPT\DS_orderDetails.xss">
+      <DependentUpon>DS_orderDetails.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
